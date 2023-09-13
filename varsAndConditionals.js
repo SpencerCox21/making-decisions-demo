@@ -38,6 +38,7 @@ if (jonSnowHealth <= jamieLannisterAttack - jonSnowDefense) {
 }
 
 
+
 let isDead = false
 
 for (let i = 1; i < 3; i++) {
@@ -50,5 +51,14 @@ for (let i = 1; i < 3; i++) {
 
 if (isDead === false) {
     console.log('It is a miracle that Jon has survived.')
+
+    while (jonSnowHealth > 0){
+        console.log('Jamie punches Jon')
+        jonSnowHealth -= 5;
+    }
+
+    console.log(`Jamie killed Jon after punching him a bunch`)
 }
+
+
 
