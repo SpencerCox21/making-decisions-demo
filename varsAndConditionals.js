@@ -5,7 +5,7 @@
 */ 
 
 
-let jonSnowAttack = 35;
+let jonSnowAttack = 25;
 let jamieLannisterAttack = 35;
 
 if (jonSnowAttack > jamieLannisterAttack){
@@ -15,3 +15,15 @@ if (jonSnowAttack > jamieLannisterAttack){
 } else {
     console.log('The fighters are evenly matched.')
 }
+
+
+let jonSnowHealth = 100
+let jonSnowDefense = 0
+
+if (jonSnowHealth <= jamieLannisterAttack) {
+    console.log("Jon Snow has done died.")
+} else {
+    jonSnowHealth = jonSnowHealth - jamieLannisterAttack
+    console.log(`Jon Snow's health is down to ${jonSnowHealth}hp`)
+}
+
