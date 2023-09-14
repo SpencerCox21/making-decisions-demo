@@ -67,5 +67,43 @@ console.log('backpack after the scientists gift')
 console.log(backpack)
 
 
+//your backpack is to big and heavy, you deside to get rid of it
+
+backpack.shift()
+console.log('You got rid of the Big Statue.')
+console.log(backpack)
+
+//encountered a wild butterfree and used 1 pokeball
+//you need to get rid of a party member.
+
+let butterfreeEncounter = 'Butterfree'
+backpack.shift()
+let releasedPokemon = pokemon.splice(3, 1, butterfreeEncounter)
+
+console.log('backpack after catching a butterfree')
+console.log(backpack)
+console.log('here is my team')
+console.log(pokemon)
+console.log('here are the released pokemon')
+console.log(releasedPokemon)
+
+
+//you found a stone called a "pidgey stone"
+//causes all pidgeys to evolve into pidgeotto
+//loop through pokemon, if pidgey then change it to a pidgeotto
+
+for (i = 0; i < pokemon.length; i++){
+    let currentPokemon = pokemon[i]
+    if (currentPokemon === 'pidgey'){
+        pokemon[i] = 'Pidgeotto'
+    }
+}
+
+console.log('my pidgeys have all evolved and now my team is this')
+console.log(pokemon)
+
+
+
+
 
 
